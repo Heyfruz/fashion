@@ -1,0 +1,66 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "react-native-wcandillon",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "plugins": ["react"],
+  "rules": {
+    "sort-imports": [
+      "error",
+      {
+        "ignoreDeclarationSort": true
+      }
+    ],
+    "react-native/sort-styles": [
+      "error",
+      "asc",
+      { "ignoreClassNames": false, "ignoreStyleProperties": false }
+    ],
+    "sort-keys": [
+      "error",
+      "asc",
+      { "caseSensitive": true, "natural": false, "minKeys": 2 }
+    ],
+    "sort-vars": ["error"],
+    "import/extensions": [0, "always", { "ignorePackages": true }]
+  }
+}
+
+// {
+//   "env": {
+//     "browser": true,
+//     "es2021": true,
+//     "node": true
+//   },
+//   "extends": [
+//     "eslint:recommended",
+//     "plugin:react/recommended",
+//     "plugin:@typescript-eslint/recommended"
+//   ],
+//   "parser": "@typescript-eslint/parser",
+//   "parserOptions": {
+//     "ecmaFeatures": {
+//       "jsx": true
+//     },
+//     "ecmaVersion": 12,
+//     "sourceType": "module"
+//   },
+//   "plugins": ["react", "@typescript-eslint"],
+//   "rules": {
+//     "no-unused-vars": [
+//       "error",
+//       {
+//         "varsIgnorePattern": "^[A-Z]"
+//       }
+//     ],
+//     "react/jsx-uses-react": "error",
+//     "react/jsx-uses-vars": "error"
+//   }
+// }
