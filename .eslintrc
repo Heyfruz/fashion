@@ -29,38 +29,11 @@
       { "caseSensitive": true, "natural": false, "minKeys": 2 }
     ],
     "sort-vars": ["error"],
-    "import/extensions": [0, "always", { "ignorePackages": true }]
+    "import/extensions": [0, "always", { "ignorePackages": true }],
+    "max-len": 0,
+    "react/no-unescaped-entities": 0,
+    "no-alert": 0,
+    "import/no-extraneous-dependencies": 0,
+    "no-nested-ternary": 0
   }
 }
-
-// {
-//   "env": {
-//     "browser": true,
-//     "es2021": true,
-//     "node": true
-//   },
-//   "extends": [
-//     "eslint:recommended",
-//     "plugin:react/recommended",
-//     "plugin:@typescript-eslint/recommended"
-//   ],
-//   "parser": "@typescript-eslint/parser",
-//   "parserOptions": {
-//     "ecmaFeatures": {
-//       "jsx": true
-//     },
-//     "ecmaVersion": 12,
-//     "sourceType": "module"
-//   },
-//   "plugins": ["react", "@typescript-eslint"],
-//   "rules": {
-//     "no-unused-vars": [
-//       "error",
-//       {
-//         "varsIgnorePattern": "^[A-Z]"
-//       }
-//     ],
-//     "react/jsx-uses-react": "error",
-//     "react/jsx-uses-vars": "error"
-//   }
-// }
